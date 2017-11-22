@@ -9,7 +9,6 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-
   findAllPop: function(req, res) {
     db.Team
       .find(req.query)
@@ -42,7 +41,6 @@ module.exports = {
       .then(dbModel => res.json(dbModel))
       .catch(err => res.status(422).json(err));
   },
-
   findByIdPop: function(req, res) {
     db.Team
       .findById(req.params.id)
@@ -78,7 +76,7 @@ module.exports = {
           dbModel => res.json(dbModel)
         }
       })
-      
+
       .catch(err => res.status(422).json(err));
   },
   update: function(req, res) {

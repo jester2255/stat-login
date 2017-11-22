@@ -1,5 +1,4 @@
 const router = require("express").Router();
-
 const playerController = require("../../controllers/playersController");
 
 // Matches with "/api/player"
@@ -13,6 +12,5 @@ router
   .get(playerController.findById)
   .put(playerController.update)
   .delete(playerController.remove);
-
 
 module.exports = router;
